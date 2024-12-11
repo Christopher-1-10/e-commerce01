@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+
+   <style>
+    body{
+        background-color: rgb(255, 185, 158);
+    }
+   </style>
+</head>
+<body>
+
+    <nav class="navbar">
+
+    <div class="navdiv">
+
+    <div class="logo"><a href="#">FURNITURE STORE</a></div>
+
+    <ul class="navbar-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./collection.html">Collection</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    </div>
+    
+
+<p class="side-bar" onclick="show()"><svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+    <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5"/>
+  </svg></p>
+</nav>
+
+
+<div class="side-menu-bar">
+    <p onclick="closee()" style="position: absolute; cursor: pointer; right: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      </svg></p>
+      <ul class="side-navbar-links">
+        <li class="side-navbar-link"><a href="./index.html">Home</a></li>
+        <li class="side-navbar-link"><a href="./collection.html">Collection</a></li>
+        <li class="side-navbar-link"><a href="./contact.html">Contact</a></li>
+    </ul>
+
+</div>
+
+
+<div class="contact-container">
+    <h1>Contact</h1>
+    <form action="submit_form.php" method="POST" class="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+
+
+   
+
+<footer>
+    <p style="text-align: center; padding: 40px; color: rgb(68, 65, 65); font-size: 12px;">&copy; 2024 Furniture Store. All Rights Reserved.</p>
+</footer>
+
+    <script src="index.js"></script>
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
